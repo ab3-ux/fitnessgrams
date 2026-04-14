@@ -1,0 +1,78 @@
+<!--
+  templateType: page
+  isAvailableForNewContent: true
+  label: Fitness Grams Home
+-->
+
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>{% if content.html_title %}{{ content.html_title }}{% else %}Fitness-Grams | Performance & Nutrition{% endif %}</title>
+    <meta name="description" content="{% if content.meta_description %}{{ content.meta_description }}{% else %}Nutrition premium pour vos entraînements les plus intenses.{% endif %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{ require_css(get_asset_url("../css/main.css")) }}
+  </head>
+  <body>
+
+    <header class="topbar">
+      <div class="container">
+        <p>✨ Livraison offerte dès 50€ sur notre Boutique Officielle SumUp ✨</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <p class="eyebrow">Énergie Maximale</p>
+          <h1>DÉPASSEZ VOS LIMITES</h1>
+          <p class="subtitle">
+            La nutrition premium sélectionnée par Fitness-Grams pour vos entraînements les plus intenses.
+          </p>
+
+          <div class="benefits">
+            <span>⚡ Énergie Longue Durée</span>
+            <span>🌱 Ingrédients Premium</span>
+            <span>📦 Expédition 24/48H</span>
+            <span>💪 Protéine Haute Qualité</span>
+            <span>⭐ Service Client 5 Étoiles</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="featured">
+        <div class="container">
+          <p class="badge">Best-Seller</p>
+          <h2>BEURRE DE CACAHUÈTE BIO</h2>
+          <p>Sans huile de palme, riche en protéines. Le carburant parfait pour vos matins sportifs.</p>
+        </div>
+      </section>
+
+      <section class="goals">
+        <div class="container">
+          <h2>Explorer par Objectif</h2>
+
+          <div class="cards">
+            <div class="card">
+              <h3>Nutrition & Encas</h3>
+              <a href="#">Découvrir la gamme →</a>
+            </div>
+
+            <div class="card">
+              <h3>Boissons Énergie</h3>
+              <a href="#">Découvrir la gamme →</a>
+            </div>
+
+            <div class="card">
+              <h3>Performance</h3>
+              <a href="#">Découvrir la gamme →</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    {{ require_js(get_asset_url("../js/main.js")) }}
+  </body>
+</html>
